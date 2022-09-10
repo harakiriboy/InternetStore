@@ -2,7 +2,7 @@ import { Button, Card } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Product } from "../../app/models/product";
 import './catalogstyle.css';
-
+ 
 interface Props {
     product: Product;
 }
@@ -24,7 +24,7 @@ export default function ProductCard({product}: Props) {
                             </div>
                             <div className="a-size">
                                 Type : <span className="size">{product.type}</span><br /><br />
-                                <Button component={Link} to={`/catalog/${product.id}`} variant="outlined">View</Button>    
+                                <Button component={Link} to={`/catalog/${product.id}`} variant="outlined">View</Button>
                             </div>
                         </div>
                         </div>

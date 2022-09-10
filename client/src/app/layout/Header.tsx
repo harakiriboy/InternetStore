@@ -40,7 +40,7 @@ export default function Header({handleThemeChange, darkMode}: Props) {
                     <Typography 
                         variant='h6' 
                         component={NavLink} 
-                        to={'/homepage'}
+                        to={'/'}
                         sx={navStyles}
                         >Internet store</Typography>
                     <Switch checked={darkMode} onClick={handleThemeChange} color="default" />

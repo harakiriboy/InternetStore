@@ -1,5 +1,5 @@
 import { ShoppingCart } from "@mui/icons-material";
-import { AppBar, Avatar, Badge, Box, Button, Fade, IconButton, List, ListItem, Menu, MenuItem, Switch, Toolbar, Typography } from "@mui/material";
+import { AppBar, Badge, Box, Button, Fade, IconButton, List, ListItem, Menu, MenuItem, Switch, Toolbar, Typography } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../store/configureStore";
 import React, { useState } from "react";
@@ -8,6 +8,7 @@ import ProductSearch from "../../features/catalog/ProductSearch";
 import RadioButtonGroup from "../components/RadioButtonGroup";
 import { setProductParams } from "../../features/catalog/catalogSlice";
 import CheckboxButtons from "../components/CheckboxButtons";
+import SignedInMenu from "./SignedInMenu";
 
 interface Props {
     darkMode: boolean;
@@ -46,7 +47,8 @@ const navStyles = {
  
 
 export default function Header({handleThemeChange, darkMode}: Props) {
-    const {basket} = useAppSelector(state => state.basket)
+    const {basket} = useAppSelector(state => state.basket);
+    const {user} = useAppSelector(state => state.account);
     const {brands, types, productParams} = useAppSelector(state => state.catalog);
     const dispatch = useAppDispatch();
     const itemCount = basket?.items.reduce((sum, item) => sum + item.quantity, 0); 
@@ -202,35 +204,27 @@ export default function Header({handleThemeChange, darkMode}: Props) {
 
                 <Box display='flex' alignItems='center'>
                   <ProductSearch/>
-                  {/* <Search>
-                    <SearchIconWrapper>
-                      <SearchIcon />
-                    </SearchIconWrapper>
-                    <StyledInputBase
-                        placeholder="Search…"
-                        inputProps={{ 'aria-label': 'search' }}
-                    />
-                  </Search> */}
                   <IconButton component={Link} to='/basket' size='large' sx={{color:'inherit'}}>
                       <Badge badgeContent={itemCount} color="secondary">
                           <ShoppingCart/>
                       </Badge>
                   </IconButton>
-                  <IconButton>
-                    <Avatar/>
-                  </IconButton>
-                  {/* <List sx={{display: 'flex'}}>
-                      {rightLinks.map(({title, path}) => (
-                          <ListItem
-                              component={NavLink}
-                              to={path}
-                              key={path}
-                              sx={navStyles}
-                          >
-                              {title.toUpperCase()}
-                          </ListItem>
-                      ))}
-                  </List> */}
+                  {user ? (
+                    <SignedInMenu/>
+                  ) : (
+                    <List sx={{display: 'flex'}}>
+                        {rightLinks.map(({title, path}) => (
+                            <ListItem
+                                component={NavLink}
+                                to={path}
+                                key={path}
+                                sx={navStyles}
+                            >
+                                {title.toUpperCase()}
+                            </ListItem>
+                        ))}
+                    </List> 
+                  )}
                 </Box>
             </Toolbar>
         </AppBar>

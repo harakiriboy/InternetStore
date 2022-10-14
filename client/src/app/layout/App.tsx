@@ -13,13 +13,13 @@ import ServerError from "../errors/ServerError";
 import NotFound from "../errors/NotFound";
 import BasketPage from "../../features/basket/BasketPage";
 import LoadingComponent from "./LoadingComponent";
-import CheckoutPage from "../../features/checkout/CheckoutPage";
 import { useAppDispatch, useAppSelector } from "../store/configureStore";
 import { fetchBasketAsync } from "../../features/basket/basketSlice";
 import Login from "../../features/account/Login";
 import Register from "../../features/account/Register";
 import { fetchCurrentUser } from "../../features/account/accountSlice";
 import Orders from "../../features/orders/Orders";
+import CheckoutWrapper from "../../features/checkout/CheckoutWrapper";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -72,7 +72,7 @@ function App() {
             <Route path="/server-error" element={<ServerError/>}/>
             <Route element={<NotFound/>}/>
             <Route path='/basket' element={<BasketPage/>} />
-            <Route path='/checkout' element={user ? <CheckoutPage/> : <Navigate replace to='/login'/>}/>
+            <Route path='/checkout' element={user ? <CheckoutWrapper/> : <Navigate replace to='/login'/>}/>
             <Route path='/orders' element={user ? <Orders/> : <Navigate replace to ='login'/>}/>
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />

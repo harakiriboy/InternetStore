@@ -19,6 +19,7 @@ import { fetchBasketAsync } from "../../features/basket/basketSlice";
 import Login from "../../features/account/Login";
 import Register from "../../features/account/Register";
 import { fetchCurrentUser } from "../../features/account/accountSlice";
+import Orders from "../../features/orders/Orders";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -72,6 +73,7 @@ function App() {
             <Route element={<NotFound/>}/>
             <Route path='/basket' element={<BasketPage/>} />
             <Route path='/checkout' element={user ? <CheckoutPage/> : <Navigate replace to='/login'/>}/>
+            <Route path='/orders' element={user ? <Orders/> : <Navigate replace to ='login'/>}/>
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />
           </Routes>

@@ -11,7 +11,7 @@ export default function AddressForm() {
       <Typography variant="h6" gutterBottom>
         Shipping address
       </Typography>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} sx={{mb: 2}}>
         <Grid item xs={12} sm={12}>
           <AppTextInput control={control} name='fullName' label='Full Name'/>
         </Grid> 

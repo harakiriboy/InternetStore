@@ -37,198 +37,198 @@ namespace API.Data
             var products = new List<Product> {
                 new Product
                 {
-                    Name = "Angular Speedster Board 2000",
+                    Name = "Zara Matte Lipstick",
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 20000,
-                    PictureUrl = "/images/products/sb-ang1.png",
-                    Brand = "Angular",
-                    Type = "Boards",
+                    PictureUrl = "/images/products2/lip-zara1.png", //sb-ang1.png
+                    Brand = "Zara", // - Zara Angular
+                    Type = "Lipsticks", // - Lipstick 2000 Boards
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Green Angular Board 3000",
+                    Name = "Zara Moss Lipstick",
                     Description = "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
                     Price = 15000,
-                    PictureUrl = "/images/products/sb-ang2.png",
-                    Brand = "Angular",
-                    Type = "Boards",
+                    PictureUrl = "/images/products2/lip-zara2.png", //sb-ang2.png
+                    Brand = "Zara", // - Zara Angular
+                    Type = "Lipsticks", // - Lipstick 3000 Boards
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Core Board Speed Rush 3",
+                    Name = "Dior Frosted Lipstick",
                     Description =
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 18000,
-                    PictureUrl = "/images/products/sb-core1.png",
-                    Brand = "NetCore",
-                    Type = "Boards",
+                    PictureUrl = "/images/products2/lip-dior1.png", //sb-core1.png
+                    Brand = "Dior", // - Dior NetCore
+                    Type = "Lipsticks", // - Lipstick 3 Boards
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Net Core Super Board",
+                    Name = "Dior Lip Liner Lipstick",
                     Description =
                         "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                     Price = 30000,
-                    PictureUrl = "/images/products/sb-core2.png",
-                    Brand = "NetCore",
-                    Type = "Boards",
+                    PictureUrl = "/images/products2/lip-dior2.png", //sb-core2.png
+                    Brand = "Dior", // - Dior NetCore
+                    Type = "Lipsticks", // - Lipstick Boards
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "React Board Super Whizzy Fast",
+                    Name = "Waikiki Glossy Lipstick",
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 25000,
-                    PictureUrl = "/images/products/sb-react1.png",
-                    Brand = "React",
-                    Type = "Boards",
+                    PictureUrl = "/images/products2/lip-waikiki1.png", //sb-react1.png
+                    Brand = "Waikiki", // - Waikiki React
+                    Type = "Lipsticks", // - Lipstick Boards
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Typescript Entry Board",
+                    Name = "Guerlan Matte Lipstick",
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 12000,
-                    PictureUrl = "/images/products/sb-ts1.png",
-                    Brand = "TypeScript",
-                    Type = "Boards",
+                    PictureUrl = "/images/products2/lip-guerlan1.png", //sb-ts1.png
+                    Brand = "Guerlan", // - Guerlan TypeScript
+                    Type = "Lipsticks", // - Lipstick Boards
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Core Blue Hat",
+                    Name = "Dior Hair Powder",
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1000,
-                    PictureUrl = "/images/products/hat-core1.png",
-                    Brand = "NetCore",
-                    Type = "Hats",
+                    PictureUrl = "/images/products2/pow-dior1.png", //hat-core1.png
+                    Brand = "Dior", // - Dior NetCore
+                    Type = "Powders", // - Powder Hats
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Green React Woolen Hat",
+                    Name = "Waikiki Hair Powder",
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 8000,
-                    PictureUrl = "/images/products/hat-react1.png",
-                    Brand = "React",
-                    Type = "Hats",
+                    PictureUrl = "/images/products2/pow-waikiki1.png", //hat-react1.png
+                    Brand = "Waikiki", // - Waikiki React
+                    Type = "Powders", // - Powder Hats
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Purple React Woolen Hat",
+                    Name = "Waikiki Face Powder",
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1500,
-                    PictureUrl = "/images/products/hat-react2.png",
-                    Brand = "React",
-                    Type = "Hats",
+                    PictureUrl = "/images/products2/pow-waikiki2.png", //hat-react2.png
+                    Brand = "Waikiki", // - Waikiki React
+                    Type = "Powders", // - Powder Hats
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Blue Code Gloves",
+                    Name = "Maybellin Toilette Parfume",
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1800,
-                    PictureUrl = "/images/products/glove-code1.png",
-                    Brand = "VS Code",
-                    Type = "Gloves",
+                    PictureUrl = "/images/products2/parf-maybelline1.png", //glove-code1.png
+                    Brand = "Maybelline", // - Maybelline VS Code
+                    Type = "Parfumes", // - Parfume Gloves
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Green Code Gloves",
+                    Name = "Maybelline Cologne Parfume",
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1500,
-                    PictureUrl = "/images/products/glove-code2.png",
-                    Brand = "VS Code",
-                    Type = "Gloves",
+                    PictureUrl = "/images/products2/parf-maybelline2.png", //glove-code2.png
+                    Brand = "Maybelline", // - Maybelline VS Code
+                    Type = "Parfumes", // - Parfume Gloves
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Purple React Gloves",
+                    Name = "Waikiki Womens Parfume",
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1600,
-                    PictureUrl = "/images/products/glove-react1.png",
-                    Brand = "React",
-                    Type = "Gloves",
+                    PictureUrl = "/images/products2/parf-waikiki1.png", //glove-react1.png
+                    Brand = "Waikiki", // - Waikiki React
+                    Type = "Parfumes", // - Parfumes Gloves
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Green React Gloves",
+                    Name = "Waikiki Mens Parfume",
                     Description =
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1400,
-                    PictureUrl = "/images/products/glove-react2.png",
-                    Brand = "React",
-                    Type = "Gloves",
+                    PictureUrl = "/images/products2/parf-waikiki2.png", //glove-react2.png
+                    Brand = "Waikiki", // - Waikiki React
+                    Type = "Parfumes", // - Parfumes Gloves
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Redis Red Boots",
+                    Name = "Chanel Moss Gel",
                     Description =
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 25000,
-                    PictureUrl = "/images/products/boot-redis1.png",
-                    Brand = "Redis",
-                    Type = "Boots",
+                    PictureUrl = "/images/products2/gel-chanel1.png", //boot-redis1.png
+                    Brand = "Chanel", // - Chanel Redis
+                    Type = "Gels", // - Gel Boots
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Core Red Boots",
+                    Name = "Dior Shower Gel",
                     Description =
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 18999,
-                    PictureUrl = "/images/products/boot-core2.png",
-                    Brand = "NetCore",
-                    Type = "Boots",
+                    PictureUrl = "/images/products2/gel-dior2.png", //boot-core2.png
+                    Brand = "Dior", // - Dior NetCore
+                    Type = "Gels", // - Gel Boots
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Core Purple Boots",
+                    Name = "Dior Body Gel",
                     Description =
                         "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                     Price = 19999,
-                    PictureUrl = "/images/products/boot-core1.png",
-                    Brand = "NetCore",
-                    Type = "Boots",
+                    PictureUrl = "/images/products2/gel-dior1.png", //boot-core1.png
+                    Brand = "Dior", // - Dior NetCore
+                    Type = "Gels", // - Gel Boots
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Angular Purple Boots",
+                    Name = "Zara Moss Gel",
                     Description = "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
                     Price = 15000,
-                    PictureUrl = "/images/products/boot-ang2.png",
-                    Brand = "Angular",
-                    Type = "Boots",
+                    PictureUrl = "/images/products2/gel-zara2.png", //boot-ang2.png
+                    Brand = "Zara", // - Zara Angular
+                    Type = "Gels", // - Gel Boots
                     QuantityInStock = 100
                 },
                 new Product
                 {
-                    Name = "Angular Blue Boots",
+                    Name = "Zara Shower Gel",
                     Description =
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 18000,
-                    PictureUrl = "/images/products/boot-ang1.png",
-                    Brand = "Angular",
-                    Type = "Boots",
+                    PictureUrl = "/images/products2/gel-zara1.png", //boot-ang1.png
+                    Brand = "Zara", // - Zara Angular
+                    Type = "Gels", // - Gel Boots
                     QuantityInStock = 100
                 },
             };

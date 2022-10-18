@@ -87,11 +87,15 @@ export default function Header({handleThemeChange, darkMode}: Props) {
             <Toolbar sx={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                 <Box display='flex' alignItems='center'>
                     <IconButton>
-                        <StoreIcon style={{color: 'white'}}/>
+                        <Link to='/'>
+                            <StoreIcon style={{color: 'white'}}/>
+                        </Link>
                     </IconButton>
-                    <Typography variant='h6'>
-                        CODESHOP
-                    </Typography>
+                    <Link to='/' style={{color: 'white', textDecoration: 'none'}}>
+                        <Typography variant='h6'>
+                            CODESHOP
+                        </Typography>
+                    </Link>
                     <Switch checked={darkMode} onClick={handleThemeChange} color="default"/>
                     <Button
                         id="filter-button"
